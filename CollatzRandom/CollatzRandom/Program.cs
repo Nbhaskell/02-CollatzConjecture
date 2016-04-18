@@ -8,11 +8,15 @@ namespace CollatzRandom
 {
     class Collatz
     {
-        static Random rand = new Random();
+        // static Random rand = new Random();
 
         static void Main()
         {
-            int n = rand.Next(1, 1001);
+            Console.WriteLine("Enter any number: ");
+            int n = int.Parse(Console.ReadLine());
+
+            // int n = rand.Next(1, 1001);
+
             GenerateSequence(n);
             Console.ReadKey();
         }
